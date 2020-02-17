@@ -1,0 +1,70 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-02-17 09:44:59
+ * @LastEditTime : 2020-02-17 10:25:10
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \nuxt-app\layouts\default.vue
+ -->
+<template>
+  <div>
+    <nav>
+      <nuxt-link to="/">首页</nuxt-link>
+      <!--别名：n-link，NLink，NuxtLink-->
+      <NLink to="/admin">管理</NLink>
+      <n-link to="/cart">购物车</n-link>
+    </nav>
+    <nuxt />
+  </div>
+  
+</template>
+
+<style>
+html {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
+}
+</style>
